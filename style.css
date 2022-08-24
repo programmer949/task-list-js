@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik, Poppins, system-ui, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #040421;
+}
+
+main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adding-todo {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.main-input {
+    margin: 4px 0;
+    border-radius: 4px;
+    height: 40px;
+    border: 1px solid #1a73e8;
+    padding: 0 14px;
+    outline: none;
+    width: 100%;
+}
+
+.success {
+    outline: none;
+    border-radius: 4px;
+    height: 40px;
+    border: none;
+    background-color: #0b57ed;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.success:hover {
+    background-color: #0b57ed;
+}
+
+.header-text {
+    font-size: 1.7rem;
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+svg {
+    cursor: pointer;
+}
+
+h2 {
+    font-weight: 100;
+    color: white;
+    text-align: center;
+    margin: 8px 0;
+}
+
+hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #0b57ed;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.todo {
+    height: 55px;
+    padding: 4px 8px;
+    font-size: 14px;
+    display: flex;
+    border: 1px solid white;
+    margin: 10px 0;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.task {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: 300;
+    margin-right: auto;
+    background: none;
+    border: none;
+}
+
+.task-editing {
+    width: 90%;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    font-weight: 300;
+}
+
+.save {
+    all: unset;
+    color: greenyellow;
+    cursor: pointer;
+}
+
+.controls {
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.delete-button {
+    width: 25px;
+    height: 100%;
+    fill: white;
+    transition: 0.5s;
+}
+
+.delete-button:hover {
+    fill: #c21235;
+}
+
+.edit-button {
+    width: 22px;
+    fill: white;
+    transition: 0.5s;
+}
+
+.edit-button:hover {
+    fill: orange;
+}
+
+@media (max-width: 768px) {
+    .adding-todo,
+    .container {
+        width: 95%;
+    }
+    .task-editing {
+        font-size: 14px;
+    }
+    .controls {
+        width: 42px;
+    }
+    .delete-button {
+        width: 20px;
+    }
+    .edit-button {
+        width: 17px;
+    }
+}
