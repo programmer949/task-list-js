@@ -4,26 +4,20 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Task List</title>
         <link rel="stylesheet" href="style.css" type="text/css" />
+        <script type="text/javascript" src="script.js" defer></script>
+        <title>Task List</title>
     </head>
     <body>
         <main>
-            <div class="adding-todo">
-                <h2 class="header-text">Task List</h2>
-                <input
-                    type="text"
-                    onchange="handleChange()"
-                    placeholder="Enter new task..."
-                    class="main-input"
-                />
-                <button type="button" class="success">Add</button>
-            </div>
-            <div class="container">
-                <h2 class="tasks">Tasks</h2>
+            <header>
+                <h1>Task List</h1>
+                <input type="text" class="input-add" placeholder="Enter new task..." />
+            </header>
+            <div class="all-tasks">
+                <h2>Tasks</h2>
                 <hr />
             </div>
         </main>
-        <script src="./main.js" type="text/javascript"></script>
     </body>
 </html>
