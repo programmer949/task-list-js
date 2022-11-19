@@ -76,7 +76,7 @@ h2 {
 }
 
 span {
-    width: 75%;
+    width: 80%;
     display: flex;
 }
 
@@ -133,6 +133,10 @@ svg {
     all: unset;
     color: greenyellow;
     cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
 }
 
 @media (max-width: 768px) {
